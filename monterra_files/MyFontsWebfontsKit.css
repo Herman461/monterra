@@ -1,0 +1,60 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4646791, 2022-04-07T09:35:31-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Gilroy-Regular by Radomir Tinkov
+ * URL: https://www.myfonts.com./fonts/radomir-tinkov/gilroy/regular/
+ * Copyright: Copyright � 2016 by Radomir Tinkov. All rights reserved.
+ *
+ * Webfont: Gilroy-RegularItalic by Radomir Tinkov
+ * URL: https://www.myfonts.com./fonts/radomir-tinkov/gilroy/regular-italic/
+ * Copyright: Copyright � 2015 by Radomir Tinkov. All rights reserved.
+ *
+ * Webfont: Gilroy-BoldItalic by Radomir Tinkov
+ * URL: https://www.myfonts.com./fonts/radomir-tinkov/gilroy/bold-italic/
+ * Copyright: Copyright � 2015 by Radomir Tinkov. All rights reserved.
+ *
+ * Webfont: Gilroy-Bold by Radomir Tinkov
+ * URL: https://www.myfonts.com./fonts/radomir-tinkov/gilroy/bold/
+ * Copyright: Copyright � 2016 by Radomir Tinkov. All rights reserved.
+ *
+ *
+ *
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/46e787");
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/GilroyRegular/font.woff2') format('woff2'), url('./fonts/GilroyRegular/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/GilroyRegularItalic/font.woff2') format('woff2'), url('./fonts/GilroyRegularItalic/font.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/GilroyBold/font.woff2') format('woff2'), url('./fonts/GilroyBold/font.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('./fonts/GilroyBoldItalic/font.woff2') format('woff2'), url('./fonts/GilroyBoldItalic/font.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+

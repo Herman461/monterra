@@ -106,5 +106,27 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 		}
 	})
+
+
+	window.addEventListener('click', function(e) {
+		if (e.target.closest('.brands__more') || e.target.closest('.brands__simg')) {
+
+			if (document.querySelector('.brands__square.active')) {
+				document.querySelector('.brands__square.active').classList.remove('active')
+				document.querySelector('.brands__square.end').classList.remove('end')
+			}
+			e.target.closest('.brands__square').classList.add('active')
+			setTimeout(function() {
+				e.target.closest('.brands__square').classList.add('end')
+			}, 500)
+		}
+
+		if (e.target.closest('.hover-brands__less')) {
+			e.target.closest('.brands__square').classList.remove('active')
+			setTimeout(function() {
+				e.target.closest('.brands__square').classList.remove('end')
+			}, 300)
+		}
+	})
 })
 

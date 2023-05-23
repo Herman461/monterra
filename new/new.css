@@ -400,7 +400,369 @@ footer {
         font-weight: 500;
     }
 }
+.brands__square:hover .brands__simg {
+    transition: all 0.4s ease 0s !important;
+}
+.brands__square:hover .brands__simg {
+    transform: scale(0.95) translateY(100%);
+    opacity: 0;
+}
 
+
+.brands__hover {
+    visibility: hidden;
+}
+.brands__square {
+    overflow: visible !important;
+}
+.hover-brands__body {
+    z-index: 888;
+    /*border-radius: 50%;*/
+    position: absolute;
+    width: calc(100% + 160px);
+    height: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hover-brands__circle {
+    transform: scale(0);
+    visibility: hidden;
+    z-index: 889;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease 0.2s;
+}
+
+
+
+
+    /*.hover-brands__body::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    border-radius: 200px 200px 0 0;*/
+/*    background: #fff;*/
+/*    width: calc(100% + 40px);*/
+/*    height: 50%;*/
+/*    bottom: 0;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, 0);*/
+/*}*/
+
+@media (min-width: 991.98px) {
+    .hover-brands__title {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease 0.2s;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        color: #FFFFFF;
+        padding-top: 80px;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 900;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .hover-brands__title {
+        display: none;
+    }
+}
+
+.hover-brands__row {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0.2s;
+    position: relative;
+    z-index: 900;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding: 0 50px;
+}
+
+.hover-brands__column {
+    flex: 0 1 50%;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 10px;
+}
+.hover-brands__column_big {
+    flex: 1 1 100% !important;
+}
+.hover-brands__image {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0.3s;
+    z-index: 999;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translate(-50%, 65%);
+}
+
+.hover-brands__pieces {
+    left: 50%;
+    z-index: 900;
+    bottom: 90px;
+    transform: translate(-50%, 65%);
+    position: absolute;
+    transition: all 0.25s ease 0.42s;
+    opacity: 0;
+    visibility: hidden;
+}
+.hover-brands__image img {
+    width: 316px;
+    height: 340px;
+    object-fit: contain;
+}
+
+.hover-brands__pieces img {
+    height: 300px;
+    object-fit: contain;
+}
+
+@media (max-width: 1150.98px) {
+    .hover-brands__image img {
+        width: 197px;
+        height: 207px;
+    }
+
+    .hover-brands__pieces img {
+        height: 168px;
+
+    }
+}
+
+.brands__square.active {
+    visibility: visible !important;
+}
+.brands__title {
+    transition: all 0.3s ease 0s;
+}
+.brands__square.active .brands__title {
+    opacity: 0;
+    visibility: hidden;
+}
+.brands__square.active .brands__hover {
+    visibility: visible !important;
+}
+.brands__square.end .hover-brands__pieces {
+    transition: all 0.3s ease 0s;
+}
+.brands__square.end .hover-brands__circle {
+    transition: all 0.3s ease 0s;
+}
+.brands__square.end .hover-brands__image {
+    transition: all 0.3s ease 0s;
+}
+
+.brands__square.end .hover-brands__row {
+    transition: all 0.3s ease 0s;
+}
+.brands__square.active .hover-brands__circle {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+    top: 0;
+}
+
+.brands__title {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #101820;
+    text-align: center;
+}
+@media (max-width: 767.98px) {
+    .brands__title {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 8px;
+    }
+    .brands__more {
+        font-size: 13px !important;
+    }
+    .hover-brands__less {
+        font-size: 13px !important;
+    }
+}
+@media (min-width: 767.98px) {
+    .brands__square {
+        height: 100%;
+    }
+    .brands__title {
+        flex: 1 1 auto;
+    }
+    .brands__bimg {
+        height: 350px;
+        flex: 0 0 350px;
+    }
+}
+
+.brands__more {
+    transition: all 0.2s ease 0s;
+    font-family: "Geometria";
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    align-self: center;
+    color: #101820;
+    text-decoration: underline;
+    position: relative;
+    z-index: 800;
+    display: inline-block;
+}
+
+.hover-brands__less {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0.2s;
+    font-family: "Geometria";
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+
+    display: inline-block;
+    color: #878b8f;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    bottom: -90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: underline;
+}
+
+.brands__square.active .hover-brands__less {
+    transition: all 0.3s ease 0s;
+}
+.brands__square:hover .brands__simg {
+    transform: scale(1) translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.brands__square.active .brands__simg {
+    transform: scale(0.95) translateY(100%) !important;
+    opacity: 0 !important;
+}
+
+.brands__square.active .hover-brands__image {
+
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    visibility: visible;
+}
+.brands__square.active .hover-brands__less {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brands__square.active .hover-brands__pieces {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translate(-50%, 50%);
+}
+
+.brands__square.active .hover-brands__row {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brands__square.active .hover-brands__title {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brands__square.active .brands__more {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.brands__square .hover-brands__background {
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.brands__square.active .hover-brands__background {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 991.98px) {
+    .hover-brands__less {
+        bottom: -50px;
+    }
+    .hover-brands__body {
+        max-width: 400px;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 130px 10px 0;
+    }
+    .hover-brands__row {
+        padding: 0 30px;
+        margin: 0 -5px;
+    }
+    .hover-brands__column {
+        font-size: 13px;
+        padding: 0 5px;
+        width: 50%;
+        flex: 0 0 50%;
+    }
+    .hover-brands__background img {
+        object-fit: contain;
+        z-index: 800;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+@media (max-width: 991.98px) {
+    .hover-brands__circle {
+        display: none;
+    }
+}
+@media (min-width: 991.98px) {
+    .hover-brands__background {
+        display: none;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .hover-brands__row {
+        padding: 0 5px;
+
+    }
+    .hover-brands__body {
+        padding: 140px 5px 0;
+    }
+}
 /*Временно убираем cookie*/
 
 .cookies {

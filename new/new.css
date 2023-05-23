@@ -95,13 +95,15 @@
 
 @media (min-width: 767.98px) {
     .page__banner {
-        margin-top: 100px;
-        background-position: center 120px !important;
+        background-attachment: initial !important;
+        margin-top: 100px !important;
+        background-position: center top !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-image: url("./img/main-banner.jpg") !important;
         height: 100vh !important;
-        min-height: 1000px !important;
+        min-height: 600px !important;
+
     }
 
 }
@@ -419,13 +421,32 @@ footer {
     z-index: 888;
     /*border-radius: 50%;*/
     position: absolute;
-    width: calc(100% + 160px);
-    height: 100%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     overflow: hidden;
+}
+@media (min-width: 1200.98px) {
+    .hover-brands__body {
+        width: 480px;
+        height: 480px;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .hover-brands__row {
+        padding-top: 80px !important;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1200.98px) {
+    .hover-brands__body {
+        width: 400px;
+        height: 400px;
+    }
+    .hover-brands__row {
+        padding: 0 40px;
+    }
 }
 .hover-brands__circle {
     transform: scale(0);
@@ -492,7 +513,8 @@ footer {
 }
 
 .hover-brands__column {
-    flex: 0 1 50%;
+    width: 50%;
+    flex: 0 0 50%;
     margin-bottom: 18px;
     font-weight: 500;
     font-size: 18px;
@@ -503,6 +525,7 @@ footer {
 }
 .hover-brands__column_big {
     flex: 1 1 100% !important;
+    width: 100%;
 }
 .hover-brands__image {
     opacity: 0;
@@ -728,8 +751,7 @@ footer {
     .hover-brands__column {
         font-size: 13px;
         padding: 0 5px;
-        width: 50%;
-        flex: 0 0 50%;
+
     }
     .hover-brands__background img {
         object-fit: contain;
@@ -760,7 +782,7 @@ footer {
 
     }
     .hover-brands__body {
-        padding: 140px 5px 0;
+        padding: 120px 5px 0;
     }
 }
 /*Временно убираем cookie*/

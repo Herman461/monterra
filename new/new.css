@@ -125,7 +125,7 @@
 }
 
 @media (max-width: 360.98px) {
-    .page__banner {
+    .page__banner_bottom {
         max-width: 300px;
         background-size: contain !important;
     }

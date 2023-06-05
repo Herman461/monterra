@@ -464,7 +464,7 @@ footer {
     visibility: hidden;
     z-index: 889;
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -547,14 +547,14 @@ footer {
     position: absolute;
     bottom: 90px;
     left: 50%;
-    transform: translate(-50%, 55%);
+    transform: translate(-50%, 45%);
 }
 
 .hover-brands__pieces {
     left: 50%;
     z-index: 900;
     bottom: 90px;
-    transform: translate(-50%, 55%) scale(0);
+    transform: translate(-50%, 50%) scale(0);
     position: absolute;
     transition: all 0.25s ease 0.42s;
 
@@ -563,13 +563,13 @@ footer {
 
 
 .hover-brands__image img {
-    width: 316px;
-    height: 340px;
+    width: 250px;
+    height: 290px;
     object-fit: contain;
 }
 
 .hover-brands__pieces img {
-    height: 300px;
+    height: 240px;
     object-fit: contain;
 }
 
@@ -578,10 +578,15 @@ footer {
         width: 197px;
         height: 207px;
     }
-
+    .hover-brands__less {
+        bottom: -36px;
+    }
     .hover-brands__pieces img {
         height: 168px;
 
+    }
+    .hover-brands__row {
+        padding-top: 110px !important;
     }
 }
 
@@ -591,7 +596,8 @@ footer {
 .brands__title {
     transition: all 0.3s ease 0.2s;
     z-index: 890;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    min-height: 70px;
 }
 
 @media (max-width: 991.98px) {
@@ -655,11 +661,12 @@ footer {
         height: 100%;
     }
     .brands__bimg {
-        min-height: 350px;
+        min-height: 260px;
         flex: 1 1 auto;
+        margin-bottom: 20px;
     }
     .brands__simg {
-        height: 350px;
+        height: 260px;
     }
 }
 
@@ -696,7 +703,7 @@ footer {
     position: relative;
     z-index: 999;
     cursor: pointer;
-    bottom: -90px;
+    bottom: -46px;
     left: 50%;
     transform: translate(-50%, 0);
     text-decoration: underline;
@@ -728,7 +735,7 @@ footer {
 
 .brands__square.active .hover-brands__image {
 
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 45%);
     opacity: 1;
     visibility: visible;
 }
@@ -741,12 +748,14 @@ footer {
     opacity: 1;
     visibility: visible;
 
-    transform: translate(-50%, 55%) scale(1);
+    transform: translate(-50%, 40%) scale(1);
 }
 
 .brands__square.active .hover-brands__row {
     opacity: 1;
     visibility: visible;
+    position: relative;
+    z-index: 900;
 }
 
 .brands__square.active .hover-brands__title {
@@ -814,6 +823,15 @@ footer {
     .brands__more {
         margin-top: 10px;
     }
+    .hover-brands__row {
+        padding-top: 10px !important;
+    }
+    .brands__square.active .hover-brands__image {
+        transform: translate(-50%, 50%) !important;
+    }
+    .hover-brands__pieces {
+        transform: translate(-50%, 55%) scale(1) !important;
+    }
 }
 @media (min-width: 991.98px) {
     .hover-brands__background {
@@ -831,12 +849,12 @@ footer {
     }
     .hover-brands__pieces,
     .hover-brands__image {
-        bottom: 63px;
+        bottom: 60px;
     }
 }
 @media (min-width: 767.98px) and (max-width: 991.98px) {
     .hover-brands__body {
-        padding-top: 180px !important;
+        padding-top: 140px !important;
     }
 }
 /*Временно убираем cookie*/

@@ -83,9 +83,9 @@
             <button data-tab-category="home" data-tab-title="about" type="button" class="base-buttons__item">О бренде</button>
         </div>
     </div>
-    <div id="base-collection" data-tab-category="home" data-tab-content="collection" class="container active">
+    <div id="base-collection" data-tab-category="home" data-tab-content="collection" class="container">
         <div class="base-title">Роскошная коллекция <br>из&nbsp;11&nbsp;вкусов</div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-md-3 col-lg-4 mb-5">
                 <div class="brands__square" style="background-color:#fe6b01">
                     <div class="brands__title">Грецкий Орех</div>
@@ -446,7 +446,7 @@
         </div>
         <a href="#base-collection" class="base-button-up">Наверх</a>
     </div>
-    <div data-tab-category="home" data-tab-content="about">
+    <div class="active" data-tab-category="home" data-tab-content="about">
         <div class="container">
             <div class="base-content">
                 <div class="base-content__description">
@@ -628,13 +628,6 @@
     <script src="./monterra_files/lib.js.Без названия"></script>
     <script src="./new/swiper-bundle.min.js"></script>
     <script src="./new/new.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var des = $("#products").offset().top;
-                $('html,body').animate({ scrollTop: des }, 1100);
-            });
-        </script>
         <!-- cookies -->
     <script type="text/javascript">
 

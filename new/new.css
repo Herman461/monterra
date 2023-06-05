@@ -286,7 +286,7 @@ footer {
 }
 
 .base-slider__slide {
-    height: 350px !important;
+    height: 420px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,7 +350,7 @@ footer {
     }
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 360.98px) {
     .page__banner_bottom {
         background-attachment: initial !important;
         background-size: contain !important;
@@ -369,9 +369,14 @@ footer {
 
     }
 }
-
-@media (max-width: 767.98px) {
+@media (min-width: 360.98px) {
     .page__banner_bottom {
+        max-width: none;
+    }
+}
+@media (max-width: 360.98px) {
+    .page__banner_bottom {
+
         background-attachment: initial !important;
         background-size: contain !important;
         min-height: 410px !important;
@@ -415,7 +420,12 @@ footer {
     max-width: 920px;
     margin: 0 auto;
 }
+@media (max-width: 1400.98px) {
+    .base-ice-cream img {
+        max-width: 600px;
+    }
 
+}
 @media (max-width: 991.98px) {
     .base-ice-cream img {
         max-width: 394px;
@@ -458,6 +468,9 @@ footer {
     .hover-brands__row {
         padding: 0 40px;
     }
+}
+.container {
+    max-width: 1600px !important;
 }
 .hover-brands__circle {
     transform: scale(0);
@@ -596,7 +609,7 @@ footer {
 .brands__title {
     transition: all 0.3s ease 0.2s;
     z-index: 890;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     min-height: 70px;
 }
 
@@ -656,20 +669,28 @@ footer {
         font-size: 13px !important;
     }
 }
+.brands__bimg {
+    min-height: 280px;
+}
+.brands__simg {
+    height: 280px;
+}
 @media (min-width: 767.98px) {
     .brands__square {
         height: 100%;
     }
     .brands__bimg {
-        min-height: 260px;
+        min-height: 360px;
         flex: 1 1 auto;
         margin-bottom: 20px;
     }
     .brands__simg {
-        height: 260px;
+        height: 350px;
     }
 }
-
+.brands__square {
+    height: auto !important;
+}
 .brands__more {
     transition: all 0.2s ease 0s;
     font-family: "Geometria";
@@ -782,6 +803,7 @@ footer {
 
 
 @media (max-width: 991.98px) {
+
     .hover-brands__less {
         bottom: -50px;
     }

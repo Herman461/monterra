@@ -874,6 +874,12 @@ footer {
         bottom: 60px;
     }
 }
+
+@media (max-width: 500.98px) {
+    .hover-brands__body {
+        padding-top: 150px !important;
+    }
+}
 @media (min-width: 767.98px) and (max-width: 991.98px) {
     .hover-brands__body {
         padding-top: 140px !important;

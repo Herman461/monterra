@@ -79,15 +79,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	const firstSlider = new Swiper('.base-slider__body_first', {
 		speed: 500,
-		spaceBetween: 20,
-		slidesPerView: 1.3,
-
+		spaceBetween: 8,
+		slidesPerView: 1.45,
+		loop: true,
 		breakpoints: {
 			991.98: {
-				slidesPerView: 4
+				slidesPerView: 4,
+				loop: false,
+				spaceBetween: 20,
 			},
 			767.98: {
-				slidesPerView: 3.1
+				slidesPerView: 3.1,
+				loop: false,
+				spaceBetween: 20,
 			},
 		}
 	})
@@ -97,16 +101,25 @@ document.addEventListener('DOMContentLoaded', function() {
 		spaceBetween: 20,
 		slidesPerView: 1.1,
 		centeredSlides: true,
+		loop: true,
 		breakpoints: {
 			991.98: {
-				slidesPerView: 4
+				slidesPerView: 4,
+				loop: false,
 			},
 			767.98: {
-				slidesPerView: 2.1
+				slidesPerView: 2.1,
+				loop: false,
 			},
 		}
 	})
 
+	const aboutButton = document.querySelector('[data-tab-title="about"]')
+
+	aboutButton.addEventListener('click', function() {
+		firstSlider.update()
+		secondSlider.update()
+	})
 
 	window.addEventListener('click', function(e) {
 		if (e.target.closest('.brands__more') || e.target.closest('.brands__simg')) {

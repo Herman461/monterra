@@ -161,9 +161,16 @@
     .base-title br {
         display: none;
     }
-
+    .base-title_spacing br {
+        display: inline-block;
+    }
 }
 
+@media (max-width: 500.98px) {
+    .mb-5 {
+        margin-bottom: 4rem !important;
+    }
+}
 .base-slider {
     margin-bottom: 160px;
 }
@@ -418,12 +425,25 @@ footer {
 .brands__square:hover .brands__simg {
     transition: all 0.4s ease 0s !important;
 }
+
 .brands__square:hover .brands__simg {
     transform: scale(0.95) translateY(100%);
     opacity: 0;
     transition: none !important;
 }
+.brands__simg {
+    transition: all 0.3s ease 0s;
+}
+.brands__bimg:hover {
+    cursor: pointer;
+}
+@media (any-hover: hover) {
+    .brands__bimg:hover .brands__simg {
+        transition: all 0.3s ease 0s !important;
+        transform: scale(0.9) !important;
 
+    }
+}
 .base-ice-cream img {
     max-width: 920px;
     margin: 0 auto;
@@ -522,6 +542,7 @@ footer {
         margin-bottom: 20px;
         position: relative;
         z-index: 900;
+        font-family: 'Geometria' !important;
     }
 
 }
@@ -636,6 +657,7 @@ footer {
     transition: all 0.3s ease 0.2s;
     z-index: 890;
     margin-bottom: 32px;
+    letter-spacing: 0 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -923,6 +945,8 @@ footer {
 @media (min-width: 991.98px) {
     .page__content {
         box-shadow: 0px -13px 27px rgba(210, 210, 210, 0.25);
+        position: relative;
+        z-index: 10;
     }
     .base-title_offset {
         margin-bottom: 74px;
@@ -1014,9 +1038,7 @@ footer {
     .base-slider__body {
         overflow: visible !important;
     }
-    .base-slider__slide:hover {
-        transform: scale(1.3);
-    }
+
 }
 @media (max-width: 767.98px) {
     .base-banner__ice-cream img:first-child {

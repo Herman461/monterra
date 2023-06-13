@@ -122,6 +122,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 
 	window.addEventListener('click', function(e) {
+		if (e.target.closest('.hover-brands__less') || e.target.closest('.brands__square.active')) {
+			e.target.closest('.brands__square').classList.remove('active')
+			setTimeout(function() {
+				e.target.closest('.brands__square').classList.remove('end')
+			}, 300)
+		}
+
 		if (e.target.closest('.brands__more') || e.target.closest('.brands__simg')) {
 
 			if (document.querySelector('.brands__square.active')) {
@@ -134,12 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}, 500)
 		}
 
-		if (e.target.closest('.hover-brands__less')) {
-			e.target.closest('.brands__square').classList.remove('active')
-			setTimeout(function() {
-				e.target.closest('.brands__square').classList.remove('end')
-			}, 300)
-		}
+
 	})
 })
 

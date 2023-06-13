@@ -888,11 +888,11 @@ footer {
 
 @media (max-width: 400.98px) {
     .hover-brands__row {
-        padding: 0 5px;
+        padding: 0;
 
     }
     .hover-brands__body {
-        padding: 95px 5px 0;
+        padding: 95px 3px 0;
     }
     .hover-brands__pieces,
     .hover-brands__image {

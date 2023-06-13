@@ -618,6 +618,9 @@ footer {
     .hover-brands__pieces {
         transition: all 0.25s ease 0.55s;
     }
+    .page__banner_top {
+        min-height: 900px !important;
+    }
 }
 .hover-brands__pieces img {
     -webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
@@ -1006,12 +1009,15 @@ footer {
     flex: 0 0 auto;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 33%);
     bottom: 0;
 }
-@media (max-width: 1360.98px) {
+@media (max-width: 991.98px) {
     .base-banner__ice-cream img {
         max-width: 800px;
+    }
+    .page__banner_top {
+        overflow: hidden;
     }
 }
 @media (min-width: 767.98px) {
@@ -1046,11 +1052,12 @@ footer {
     }
 
     .base-banner__ice-cream img {
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 20px);
     }
     .base-banner__ice-cream img:last-child {
-        max-width: 100%;
+        max-width: 533px;
         height: auto;
+        width: 533px;
         margin: 0 auto;
     }
     .base-banner {

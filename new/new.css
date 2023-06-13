@@ -288,8 +288,7 @@ footer {
 .container {
 }
 
-.base-slider__body {
-}
+
 
 .swiper {
 }
@@ -411,6 +410,19 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+    .base-slider__body_first {
+        overflow: hidden !important;
+    }
+    .base-slider__body_first .swiper-wrapper {
+        overflow: hidden;
+        transform: none !important;
+    }
+    .base-slider__slide_fourth {
+        display: none !important;
+    }
+    .base-slider__slide_first {
+        display: none !important;
+    }
     .base-button-up {
         display: flex;
         text-align: center;
@@ -1099,7 +1111,7 @@ footer {
     }
     .base-slider__slide_second img {
         object-fit: cover;
-        height: 95% !important;
+        height: 87% !important;
     }
     .base-slider__slide_first img {
         object-fit: cover;

@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const firstSlider = new Swiper('.base-slider__body_first', {
 		speed: 500,
 		spaceBetween: 8,
-		slidesPerView: 1.45,
+		slidesPerView: 2,
 		loop: true,
 		breakpoints: {
 			991.98: {

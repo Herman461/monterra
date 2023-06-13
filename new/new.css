@@ -344,8 +344,11 @@ footer {
         font-family: 'Geometria';
         font-size: 16px;
     }
-
+    .base-slider__body_second {
+        height: 360px;
+    }
     .base-slider__body_second .swiper-slide-active {
+        transition: all 0.3s ease 0s;
         height: 360px !important;
     }
     .base-slider__body_second .base-slider__slide img {

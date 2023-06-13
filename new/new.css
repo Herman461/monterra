@@ -875,8 +875,8 @@ footer {
         z-index: 800;
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: -15px;
+        width: calc(100% + 30px);
         height: 100%;
 
     }

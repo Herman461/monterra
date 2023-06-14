@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			}, 300)
 		}
 
-		if (e.target.closest('.brands__more') || e.target.closest('.brands__simg')) {
+		if (e.target.closest('.brands__more') || e.target.closest('.brands__bimg')) {
 
 			if (document.querySelector('.brands__square.active')) {
 				document.querySelector('.brands__square.active').classList.remove('active')

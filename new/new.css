@@ -1032,12 +1032,12 @@ footer {
 }
 
 .base-banner__ice-cream img {
-    max-width: 1300px;
+    max-width: 1484px;
     height: auto;
     flex: 0 0 auto;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 33%);
+    transform: translate(-50%, 35%);
     bottom: 0;
 }
 @media (max-width: 991.98px) {

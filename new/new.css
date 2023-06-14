@@ -105,7 +105,10 @@
         min-height: 600px !important;
 
     }
-
+    .page__banner_top {
+        height: 900px !important;
+        background-position: center bottom !important;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1033,6 +1036,7 @@ footer {
 
 .base-banner__ice-cream img {
     max-width: 1484px;
+    /*max-width: calc(1000px + 1484 * ((100vw - 320px) / 1920));*/
     height: auto;
     flex: 0 0 auto;
     position: absolute;

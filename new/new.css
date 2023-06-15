@@ -1044,6 +1044,16 @@ footer {
     transform: translate(-50%, 35%);
     bottom: 0;
 }
+@media (min-width: 991.98px) and (max-width: 1500.98px) {
+    .base-banner__ice-cream img {
+        transform: translate(-50%, 35%) scale(0.9);
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1200.98px) {
+    .base-banner__ice-cream img {
+        transform: translate(-50%, 35%) scale(0.77);
+    }
+}
 @media (max-width: 991.98px) {
     .base-banner__ice-cream img {
         max-width: 800px;

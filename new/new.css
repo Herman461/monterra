@@ -329,14 +329,18 @@ footer {
     .base-slider__slide_big {
         height: 460px !important;
     }
-    .base-slider__slide_big img {
-        height: 100% !important;
-    }
+
     .base-slider__body_second .swiper-wrapper {
         align-items: center; !important;
     }
     .base-content__description_offset p {
         margin-bottom: 64px !important;
+    }
+}
+
+@media (min-width: 1600.98px) {
+    .base-slider__slide_big img {
+        height: 100% !important;
     }
 }
 
@@ -970,6 +974,9 @@ footer {
     .hover-brands__body {
         padding: 95px 3px 0;
     }
+
+}
+@media (max-width: 500.98px) {
     .hover-brands__pieces,
     .hover-brands__image {
         bottom: 60px;

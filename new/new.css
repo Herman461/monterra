@@ -332,10 +332,10 @@ footer {
     .base-slider__body_second .swiper-wrapper {
         min-height: 460px;
     }
-    .base-slider__body_second .swiper-slide-active {
+    .base-slider__body_second.changed .swiper-slide-active {
         height: 460px !important;
     }
-    .base-slider__body_second .swiper-slide-active img {
+    .base-slider__body_second.changed .swiper-slide-active img {
 
         height: 100% !important;
         object-fit: cover;

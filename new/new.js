@@ -95,13 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 		}
 	})
-
+	wasSecondSliderInit = false
 	const secondSlider = new Swiper('.base-slider__body_second', {
 		speed: 500,
 		spaceBetween: 20,
 		slidesPerView: 1.1,
 		centeredSlides: true,
 		loop: true,
+
 		breakpoints: {
 			991.98: {
 				slidesPerView: 'auto',
@@ -113,6 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
 				centeredSlides: true,
 				spaceBetween: 20,
 			},
+		},
+		on: {
+			slideChange() {
+				if (!wasSecondSliderInit) {
+					wasSecondSliderInit = true
+					return
+				}
+
+				document.querySelector('.base-slider__body_second').classList.add('changed')
+			}
 		}
 	})
 

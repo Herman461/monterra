@@ -326,8 +326,31 @@ footer {
 
         width: 20% !important;
     }
-    .base-slider__slide_big {
+    .base-slider__body_second {
+        min-height: 460px;
+    }
+    .base-slider__body_second .swiper-wrapper {
+        min-height: 460px;
+    }
+    .base-slider__body_second .swiper-slide-active {
         height: 460px !important;
+    }
+    .base-slider__body_second .swiper-slide-active img {
+
+        height: 100% !important;
+        object-fit: cover;
+    }
+    .base-slider__body_second .base-slider__slide {
+
+        width: calc(25%) !important;
+    }
+    .base-slider__body_second .base-slider__slide_big {
+
+        width: calc(30%) !important;
+    }
+    .base-slider__body_second .base-slider__slide_small {
+
+        width: calc(20%) !important;
     }
 
     .base-slider__body_second .swiper-wrapper {
@@ -359,13 +382,17 @@ footer {
 }
 
 
-@media (min-width: 991.98px) {
-    .base-slider .swiper-wrapper {
-        transform: none !important;
-    }
+/*@media (min-width: 991.98px) {*/
+/*    .base-slider .swiper-wrapper {*/
+/*        transform: none !important;*/
+/*    }*/
 
+/*}*/
+
+
+* {
+    min-width: 0;
 }
-
 @media (max-width: 991.98px) {
     .base-content__description p {
         font-family: 'Geometria';
@@ -1252,3 +1279,21 @@ footer {
         height: 85% !important;
     }
 }
+
+@media (min-width: 991.98px) {
+    .base-slider__body_second .swiper-slide-active {
+        transition: all 0.3s ease 0s;
+        height: 460px !important;
+    }
+    .base-slider__body_second {
+        overflow: hidden !important;
+    }
+    /*.base-slider__body_second .swiper-wrapper {*/
+    /*    margin: 0 !important;*/
+    /*}*/
+    /*.base-slider__body_second .base-slider__slide {*/
+    /*    padding: 0 !important;*/
+    /*    margin-right: 20px !important;*/
+    /*}*/
+}
+

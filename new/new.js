@@ -104,12 +104,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		loop: true,
 		breakpoints: {
 			991.98: {
-				slidesPerView: 4,
-				loop: false,
+				slidesPerView: 'auto',
+				centeredSlides: false,
+				spaceBetween: 0,
 			},
 			767.98: {
 				slidesPerView: 2.1,
-				loop: false,
+				centeredSlides: true,
+				spaceBetween: 20,
 			},
 		}
 	})

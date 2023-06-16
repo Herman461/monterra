@@ -1089,7 +1089,7 @@ footer {
     z-index: 4;
     opacity: 1;
     visibility: visible;
-    transition: all 0.4s ease 0s;
+    transition: all 0.4s linear 0.4s;
 }
 .page__banner_bottom {
     margin-top: 0 !important;

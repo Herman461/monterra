@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		setTimeout(() => {
 			animOnScroll();
-		}, 800);
+		}, 2000);
 	}
 })
 

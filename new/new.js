@@ -107,7 +107,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		},
 
 		loop: true,
-		freeMode: true,
+		freeMode: {
+			enabled: true,
+			sticky: true,
+		},
 		breakpoints: {
 			991.98: {
 				slidesPerView: 'auto',

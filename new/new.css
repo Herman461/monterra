@@ -330,6 +330,7 @@ footer {
     }
     .base-slider__body_second .swiper-wrapper {
         min-height: 500px;
+        transition: all 0.3s ease 0s;
     }
     .base-slider__body_second .swiper-slide-next {
         height: 460px !important;
@@ -1192,6 +1193,9 @@ footer {
     .page__banner_top {
         overflow: hidden;
     }
+    .brands__square.active .brands__title {
+        transition: none !important;
+    }
 }
 @media (min-width: 767.98px) {
     .base-banner__ice-cream img:last-child {
@@ -1302,6 +1306,7 @@ footer {
         transition: all 0.5s ease 0s;
         height: 500px !important;
     }
+
     .base-slider__body_second {
         overflow: hidden !important;
     }
@@ -1332,5 +1337,8 @@ footer {
     .base-slider__slide_small.swiper-slide-duplicate .base-slider__image {
         height: 245px !important;
     }
+
+
+
 }
 

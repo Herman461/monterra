@@ -97,10 +97,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	})
 	// wasSecondSliderInit = false
 	const secondSlider = new Swiper('.base-slider__body_second', {
-		speed: 500,
+		speed: 1000,
 		spaceBetween: 20,
 		slidesPerView: 1.1,
 		centeredSlides: true,
+		initialSlide: 0,
+
 		loop: true,
 		breakpoints: {
 			991.98: {
@@ -114,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				spaceBetween: 20,
 			},
 		},
+
 		// on: {
 		// 	slideChange() {
 		// 		if (!wasSecondSliderInit) {
@@ -125,12 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		// 	}
 		// }
 	})
-
+	secondSlider.on('slideChange', function() {
+		secondSlider.updateSlides()
+	})
 	const aboutButton = document.querySelector('[data-tab-title="about"]')
 
 	aboutButton.addEventListener('click', function() {
 		firstSlider.update()
 		secondSlider.update()
+		secondSlider.updateSlides()
 	})
 
 	window.addEventListener('click', function(e) {

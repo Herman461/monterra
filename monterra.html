@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="https://froneridev.1d61.com/img/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="https://froneridev.1d61.com/img/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://froneridev.1d61.com/img/apple-touch-icon-180x180.png">
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 
     <link rel="stylesheet" href="./monterra_files/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -93,7 +93,7 @@
             <button data-tab-category="home" data-tab-title="about" type="button" class="base-buttons__item">О бренде</button>
         </div>
     </div>
-    <div id="base-collection" data-tab-category="home" data-tab-content="collection" class="container active">
+    <div id="base-collection" data-tab-category="home" data-tab-content="collection" class="container">
         <div class="base-title base-title_spacing  base-title_offset">Роскошная коллекция <br>из&nbsp;11&nbsp;вкусов</div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-md-3 col-lg-4 mb-5">
@@ -456,7 +456,7 @@
         </div>
         <a href="#base-collection" class="base-button-up">Наверх</a>
     </div>
-    <div data-tab-category="home" data-tab-content="about">
+    <div class="active" data-tab-category="home" data-tab-content="about">
         <div class="container">
             <div class="base-content">
                 <div class="base-content__description">
@@ -489,16 +489,24 @@
             <div class="base-slider">
                 <div class="base-slider__body base-slider__body_second swiper">
                     <div class="base-slider__slide">
-                        <img src="new/img/about/2_01.jpg" alt="">
+                        <div class="base-slider__image">
+                            <img src="new/img/about/2_01.jpg" alt="">
+                        </div>
                     </div>
                     <div class="base-slider__slide base-slider__slide_big">
-                        <img src="new/img/about/2_02.jpg" alt="">
+                        <div class="base-slider__image">
+                            <img src="new/img/about/2_02.jpg" alt="">
+                        </div>
                     </div>
                     <div class="base-slider__slide">
-                        <img src="new/img/about/2_03.jpg" alt="">
+                        <div class="base-slider__image">
+                            <img src="new/img/about/2_03.jpg" alt="">
+                        </div>
                     </div>
                     <div class="base-slider__slide base-slider__slide_small">
-                        <img src="new/img/about/2_04.jpg" alt="">
+                        <div class="base-slider__image">
+                            <img src="new/img/about/2_04.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -629,7 +637,7 @@
     </div>
 
 
-<!--        <script src="./monterra_files/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
+        <script src="./monterra_files/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <!--        <script src="./monterra_files/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>-->
 
 
@@ -780,6 +788,6 @@
         });
     </script>
 
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./new/new.js"></script>
 </body></html>

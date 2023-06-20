@@ -102,7 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		slidesPerView: 1.1,
 		centeredSlides: true,
 		initialSlide: 0,
-
+		autoplay: {
+			delay: 2000,
+		},
 		loop: true,
 		breakpoints: {
 			991.98: {

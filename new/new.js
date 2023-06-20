@@ -105,8 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		autoplay: {
 			delay: 2000,
 		},
-		freeMode: true,
+
 		loop: true,
+		freeMode: true,
 		breakpoints: {
 			991.98: {
 				slidesPerView: 'auto',

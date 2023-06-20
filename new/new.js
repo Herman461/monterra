@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		autoplay: {
 			delay: 2000,
 		},
+		freeMode: true,
 		loop: true,
 		breakpoints: {
 			991.98: {

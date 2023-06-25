@@ -1,51 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-	// Табы
-	const tabLinks = document.querySelectorAll("[data-tab-title]");
-	const tabContent = document.querySelectorAll("[data-tab-content]");
-
-
-	if (tabContent.length > 0)  {
-		tabLinks.forEach(function(el) {
-			el.addEventListener("click", openTabs);
-		});
-
-	}
-
-	function openTabs(el) {
-
-		const btnTarget = el.currentTarget;
-		const title = btnTarget.dataset.tabTitle;
-		const category = btnTarget.dataset.tabCategory
-
-		const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
-		const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
-
-		tabContent.forEach(function(el) {
-			el.classList.remove("active");
-		});
-
-		tabLinks.forEach(function(el) {
-			el.classList.remove("active");
-		});
-
-		const activeContent = document.querySelectorAll(`[data-tab-content="${title}"][data-tab-category="${category}"]`)
-
-		activeContent.forEach(function(el) {
-			el.classList.add('active')
-		})
-		document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
-
-
-
-		const currentTitles = document.querySelectorAll(`[data-tab-title="${title}"]`)
-
-		for (let index = 0; index < currentTitles.length; index++) {
-			const title = currentTitles[index]
-			title.classList.add("active");
-		}
-
-	}
-
 
 	let sliders = document.querySelectorAll(".swiper");
 	if (sliders) {
@@ -77,6 +30,53 @@ document.addEventListener('DOMContentLoaded', function() {
 	function sliders_build_callback() { }
 
 
+	const categoriesSlider = new Swiper('.base-categories-slider', {
+		speed: 1000,
+		autoHeight: true,
+		allowTouchMove: false,
+	})
+
+	// Табы
+	const tabLinks = document.querySelectorAll("[data-tab-title]");
+
+
+	if (tabLinks.length > 0)  {
+		tabLinks.forEach(function(el) {
+			el.addEventListener("click", openTabs);
+		});
+
+	}
+
+	function openTabs(el) {
+
+		const btnTarget = el.currentTarget;
+		const title = btnTarget.dataset.tabTitle;
+		const category = btnTarget.dataset.tabCategory
+
+		if (btnTarget.dataset.tabTitle === 'about') {
+
+			categoriesSlider.slideNext()
+		} else {
+			categoriesSlider.slidePrev()
+		}
+
+		const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
+		tabLinks.forEach(function(el) {
+			el.classList.remove("active");
+		});
+
+		const currentTitles = document.querySelectorAll(`[data-tab-title="${title}"]`)
+
+		for (let index = 0; index < currentTitles.length; index++) {
+			const title = currentTitles[index]
+			title.classList.add("active");
+		}
+
+	}
+
+
+
+
 	const firstSlider = new Swiper('.base-slider__body_first', {
 		speed: 500,
 		spaceBetween: 8,
@@ -95,6 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 		}
 	})
+
+
 	// wasSecondSliderInit = false
 	const secondSlider = new Swiper('.base-slider__body_second', {
 		speed: 1000,

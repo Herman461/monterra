@@ -106,7 +106,8 @@
 
     }
     .page__banner_top {
-        height: 900px !important;
+        min-height: 800px !important;
+        height: calc(100vh - 100px) !important;
         background-position: center bottom !important;
     }
 }
@@ -364,6 +365,13 @@ footer {
     }
 }
 
+@media (min-width: 991.98px) {
+    .base-slider__body_second .swiper-wrapper{
+        position: relative;
+        left: 2px;
+    }
+}
+
 .base-slider__slide img {
     max-width: 100%;
     max-height: 100%;
@@ -573,6 +581,7 @@ footer {
 }
 .container {
     max-width: 1600px !important;
+    width: 100% !important;
 }
 .hover-brands__circle {
     transform: scale(0);
@@ -588,7 +597,9 @@ footer {
 }
 
 
-
+.base-categories-slide {
+    overflow: hidden;
+}
 
     /*.hover-brands__body::before {*/
 /*    content: "";*/
@@ -693,8 +704,8 @@ footer {
         transition: all 0.25s ease 0.55s;
     }
     .page__banner_top {
-        min-height: 600px !important;
-        max-height: 900px !important;
+        /*min-height: 900px !important;*/
+        max-height: 1100px !important;
     }
 }
 .hover-brands__pieces img {
@@ -1087,7 +1098,7 @@ footer {
 
 .base-banner__ice-cream img {
     max-width: 777px;
-    /*max-width: calc(1000px + 1484 * ((100vw - 320px) / 1920));*/
+
     height: auto;
     flex: 0 0 auto;
     position: absolute;
@@ -1103,6 +1114,7 @@ footer {
 }
 .base-banner__caramel.active img {
     max-width: 1760px;
+
     /*max-width: calc(1000px + 1484 * ((100vw - 320px) / 1920));*/
     height: auto;
     flex: 0 0 auto;
@@ -1114,6 +1126,14 @@ footer {
     opacity: 1;
     visibility: visible;
     transition: all 0.4s linear 0.4s;
+}
+@media (min-width: 1100.98px) {
+    .base-banner__caramel.active img {
+        max-width: calc(800px + 760 * ((100vw - 320px) / 1920));
+    }
+    .base-banner__ice-cream img {
+        max-width: calc(500px + 277 * ((100vw - 320px) / 1920));
+    }
 }
 .page__banner_bottom {
     margin-top: 0 !important;

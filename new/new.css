@@ -433,8 +433,38 @@ footer {
         background-size: contain !important;
         min-height: 500px !important;
         height: 500px !important;
-        background-image: url("./img/about/each.jpg") !important;
+        background-image: none !important;
         background-position: center center !important;
+        position: relative;
+        margin: 0 auto;
+    }
+    .page__banner_bottom::before {
+        content: "";
+        position: absolute;
+        transition: all 0.6s ease 0s;
+        top: 0;
+        left: -15%;
+        width: 50%;
+        height: 100%;
+        background: url("./img/bg_left.png") 0 center no-repeat;
+        background-size: contain;
+    }
+    .page__banner_bottom::after {
+        content: "";
+        position: absolute;
+        transition: all 0.6s ease 0s;
+        top: 0;
+        right: -15%;
+        width: 50%;
+        height: 100%;
+        background: url("./img/bg_right.png") right center no-repeat;
+        background-size: contain;
+    }
+    .page__banner_bottom.active::before {
+        left: 0;
+    }
+    .page__banner_bottom.active::after {
+        right: 0;
     }
 }
 .base-title {
@@ -529,6 +559,13 @@ footer {
 .base-ice-cream img {
     max-width: 920px;
     margin: 0 auto;
+    position: relative;
+    top: 50px;
+    z-index: 5;
+    transition: all 0.6s ease 0s;
+}
+.page__banner_bottom.active .base-ice-cream img {
+    top: 0;
 }
 @media (max-width: 1400.98px) {
     .base-ice-cream img {

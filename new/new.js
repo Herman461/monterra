@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				const animItem = animItems[index];
 				const animItemHeight = animItem.offsetHeight;
 				const animItemOffset = offset(animItem).top;
-				const animStart = 4;
+				const animStart = 3;
 
 				let animItemPoint = window.innerHeight - animItemHeight / animStart;
 				if (animItemHeight > window.innerHeight) {
@@ -192,7 +192,13 @@ document.addEventListener('DOMContentLoaded', function() {
 					pageYOffset > animItemOffset - animItemPoint &&
 					pageYOffset < animItemOffset + animItemHeight
 				) {
-					animItem.classList.add('active');
+					if (animItem.classList.contains('base-banner__caramel')) {
+						animItem.classList.add('active');
+					}
+					if (animItem.closest('.swiper-slide-active')) {
+						animItem.classList.add('active');
+					}
+
 				}
 			}
 		}

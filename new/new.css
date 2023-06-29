@@ -1393,3 +1393,9 @@ footer {
 
 }
 
+@media (max-width: 1440.98px) {
+    .page__banner_bottom::after,
+    .page__banner_bottom::before {
+        width: 35% !important;
+    }
+}

@@ -102,13 +102,12 @@
         background-repeat: no-repeat !important;
         background-image: url("./img/main-banner.jpg") !important;
         height: 100vh !important;
-        min-height: 600px !important;
+
 
     }
     .page__banner_top {
-        min-height: 800px !important;
         height: calc(100vh - 100px) !important;
-        background-position: center bottom !important;
+        background-position: center 17px !important;
     }
 }
 
@@ -446,7 +445,7 @@ footer {
         left: -15%;
         width: 50%;
         height: 100%;
-        background: url("./img/bg_left.png") 0 center no-repeat;
+        background: url("./img/bottom_left_2.png") 0 center no-repeat;
         background-size: contain;
     }
     .page__banner_bottom::after {
@@ -457,7 +456,7 @@ footer {
         right: -15%;
         width: 50%;
         height: 100%;
-        background: url("./img/bg_right.png") right center no-repeat;
+        background: url("./img/bottom_right_2.png") right center no-repeat;
         background-size: contain;
     }
     .page__banner_bottom.active::before {
@@ -1164,9 +1163,29 @@ footer {
     visibility: visible;
     transition: all 0.8s linear 0.4s;
 }
+@media (max-width: 1440.98px) {
+    .base-banner__slogan {
+        max-width: 833px;
+    }
+}
+@media (min-width: 991.98px) {
+    .base-banner__ice-cream img:last-child {
+        display: none !important;
+    }
+}
+@media (min-width: 1100.98px) and (max-width: 1440.98px) {
+    .base-banner__caramel.active img {
+        max-width: calc(700px + 760 * ((100vw - 320px) / 1920)) !important;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1100.98px) {
+    .base-banner__caramel.active img {
+        max-width: calc(700px + 760 * ((100vw - 320px) / 1920)) !important;
+    }
+}
 @media (min-width: 1100.98px) {
     .base-banner__caramel.active img {
-        max-width: calc(800px + 760 * ((100vw - 320px) / 1920));
+        max-width: calc(600px + 760 * ((100vw - 320px) / 1920)) !important;
     }
     .base-banner__ice-cream img {
         max-width: calc(500px + 277 * ((100vw - 320px) / 1920));

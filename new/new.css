@@ -1185,10 +1185,10 @@ footer {
 }
 @media (min-width: 1100.98px) {
     .base-banner__caramel.active img {
-        max-width: calc(600px + 760 * ((100vw - 320px) / 1920)) !important;
+        max-width: calc(590px + 760 * ((100vw - 320px) / 1920)) !important;
     }
     .base-banner__ice-cream img {
-        max-width: calc(500px + 277 * ((100vw - 320px) / 1920));
+        max-width: calc(440px + 277 * ((100vw - 320px) / 1920));
     }
 }
 .page__banner_bottom {

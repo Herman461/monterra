@@ -1400,3 +1400,8 @@ footer {
     }
 }
 
+@media (max-width: 1500.98px) {
+    .base-ice-cream img {
+        max-width: 800px;
+    }
+}

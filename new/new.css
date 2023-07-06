@@ -1405,3 +1405,10 @@ footer {
         max-width: 800px;
     }
 }
+
+@media (min-width: 991.98px) and (max-width: 1300.98px) {
+    .base-banner__ice-cream img {
+        max-width: calc(350px + 277 * ((100vw - 320px) / 1920)) !important;
+    }
+
+}

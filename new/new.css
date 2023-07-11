@@ -745,16 +745,16 @@ footer {
     }
 }
 
-@media (min-width: 991.98px) and (max-width: 1400.98px) {
-    .page__banner_top {
-        min-height: 600px !important;
-    }
-}
-@media (min-width: 1400.98px) {
-    .page__banner_top {
-        min-height: 800px !important;
-    }
-}
+/*@media (min-width: 991.98px) and (max-width: 1400.98px) {*/
+/*    .page__banner_top {*/
+/*        min-height: 600px !important;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1400.98px) {*/
+/*    .page__banner_top {*/
+/*        min-height: 800px !important;*/
+/*    }*/
+/*}*/
 .hover-brands__pieces img {
     -webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-ms-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
 }
@@ -1424,11 +1424,19 @@ footer {
 
 }
 
-@media (min-width: 991.98px) and (max-height: 500px) {
+@media (min-width: 991.98px) and (max-height: 800px) {
     .base-banner__ice-cream img {
         max-width: calc(300px + 277 * ((100vw - 320px) / 1920)) !important;
     }
     .base-banner__slogan img {
         max-width: 600px !important;
+    }
+}
+@media (min-width: 991.98px) and (min-height: 800px) and (max-height: 900px) {
+    .base-banner__ice-cream img {
+        max-width: calc(350px + 277 * ((100vw - 320px) / 1920)) !important;
+    }
+    .base-banner__slogan img {
+        max-width: 700px !important;
     }
 }

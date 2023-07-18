@@ -1174,6 +1174,20 @@ footer {
     visibility: visible;
     transition: all 0.8s linear 0.4s;
 }
+
+@media (max-width: 767.98px) {
+    .base-banner__caramel.active img {
+        transform: translate(-46%, 28%);
+        bottom: auto;
+        top: 0;
+    }
+    .page__banner_top {
+        padding-bottom: 120px;
+    }
+    .base-banner__ice-cream {
+        /*transform: ;*/
+    }
+}
 @media (max-width: 1550.98px) {
     .base-banner__slogan {
         max-width: 833px;
@@ -1240,7 +1254,13 @@ footer {
     }
 }
 @media (max-width: 767.98px) {
-    .base-banner__caramel {
+    .base-banner__caramel img:first-child {
+        display: none;
+    }
+
+}
+@media (min-width: 767.98px) {
+    .base-banner__caramel img:last-child {
         display: none;
     }
 }
@@ -1314,17 +1334,20 @@ footer {
     }
 
     .base-banner__ice-cream img {
-        transform: translate(-46%, 0);
+        transform: translate(-50%, 0%);
     }
     .base-banner__ice-cream img:last-child {
-        max-width: 533px;
-        width: 533px;
+        max-width: 390px;
+        width: 390px;
         height: auto;
         margin: 0 auto;
     }
     .base-banner {
         background: none !important;
         min-height: 700px !important;
+    }
+    .page__banner_top {
+        min-height: 800px !important;
     }
     .page__banner {
         background-position: center bottom !important;
